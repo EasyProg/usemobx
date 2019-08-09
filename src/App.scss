@@ -1,0 +1,8 @@
+.App {
+  text-align: center;
+  display: flex;
+  padding: 20px;
+  @media all and (max-width: 750px) {
+    flex-direction: column;
+  }
+}

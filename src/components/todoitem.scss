@@ -1,0 +1,41 @@
+.todoitem {
+    min-width: 300px;
+    flex: 1;
+    min-height: 65px;
+    max-width: 650px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    background: rgb(196, 206, 181);
+    border-radius: 4px;
+    margin-bottom: 5px;
+    > div {
+        display: flex;
+        cursor: pointer;
+        min-width: 50px;
+        align-items: center;
+    }
+    &__done {
+        @extend .todoitem;
+        background: rgb(80, 184, 80);
+    }
+    p {
+        font-size: 12px;
+        color: black;
+        font-weight: normal;
+        margin-left: 5px;
+    }
+
+    .delete {
+        background: rgb(211, 70, 70);
+        min-width: 50px;
+        color: white;
+        border-radius: 5px;
+        min-height: 25px;
+        font-weight: normal;
+    }
+
+}
